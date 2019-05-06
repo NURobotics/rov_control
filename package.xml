@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>rov_control</name>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <description>Package to enable communication of ROV with driving station</description>
 
   <maintainer email="yehya_elmasry20@yahoo.com">Yehya Elmasry</maintainer>
