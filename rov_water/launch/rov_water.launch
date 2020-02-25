@@ -1,0 +1,5 @@
+<launch>
+ <!-- ROV Control Node-->
+  <node pkg="rov_water" type="joystick_server" name="rov_water" output="screen"/>
+
+</launch>

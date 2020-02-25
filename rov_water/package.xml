@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>rov_control</name>
+  <name>rov_water</name>
   <version>1.0.0</version>
-  <description>Package to enable communication of ROV with driving station</description>
+  <description>This package is intended to run on the ROV's on-board controller.</description>
 
   <maintainer email="yehya_elmasry20@yahoo.com">Yehya Elmasry</maintainer>
 

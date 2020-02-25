@@ -1,6 +1,6 @@
 <launch>
- <!-- ROV Control Node-->
-  <node pkg="rov_control" type="joystick_server" name="rov_control" output="screen"/>
+ <!-- ROV Surface Node-->
+  <node pkg="rov_surface" type="joystick_server" name="rov_surface" output="screen"/>
 
  <!-- joy node -->
   <node respawn="true" pkg="joy" type="joy_node" name="joystick_node" >

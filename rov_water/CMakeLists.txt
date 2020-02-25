@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(rov_control)
+project(rov_water)
+
+catkin_python_setup()
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -104,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES rov_control
+#  LIBRARIES rov_water
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -118,12 +120,12 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
-  include/rov_control
+  include/rov_water
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/rov_control.cpp
+#   src/${PROJECT_NAME}/rov_water.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -134,8 +136,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/rov_control_node.cpp)
-add_executable(joystick_server src/joystick_server.cpp)
+# add_executable(${PROJECT_NAME}_node src/rov_water_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -151,7 +152,6 @@ add_executable(joystick_server src/joystick_server.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(joystick_server ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -193,7 +193,7 @@ target_link_libraries(joystick_server ${catkin_LIBRARIES})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_rov_control.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_rov_water.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
